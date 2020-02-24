@@ -1,0 +1,24 @@
+{
+    "name": "SpeechVisualizer",
+    "version": "0.0.1",
+    "author": "philipp2310",
+    "maintainers": [],
+    "desc": "Shows the voice in and output as a widget",
+    "aliceMinVersion": "1.0.0-a5",
+    "systemRequirements": [
+        ""
+    ],
+    "pipRequirements": [
+        ""
+    ],
+    "conditions": {
+        "lang": [
+            "en",
+            "fr",
+            "de"
+        ],
+        "asrArbitraryCapture": true,
+        "activeManager": [
+        ]
+    }
+}
