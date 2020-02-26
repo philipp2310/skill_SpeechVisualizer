@@ -1,0 +1,27 @@
+.SV_smallHeader_L {
+	font-size: 0.6em;
+	color: darkgray;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin: 5px;
+}
+.SV_smallHeader_R {
+	font-size: 0.6em;
+	color: darkgray;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	text-align: right;
+	margin: 5px;
+}
+
+.SV_topR {
+	font-size: 0.6em;
+	color: darkgray;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: right;
+	margin: 5px;
+}
