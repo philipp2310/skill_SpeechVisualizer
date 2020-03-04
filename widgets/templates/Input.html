@@ -1,0 +1,43 @@
+<div class="Input" id="Input">
+	<div class="widgetIcons">
+		<div class="widgetIcon">
+			<i class="fas fa-microphone-slash" aria-hidden="true" id="SVI_ICON"></i>
+		</div>
+	</div>
+	<div class="text" id="ASRcontentInput">
+		-
+	</div>
+	<div class="SV_topR" id="ASRconf"></div>
+	<div class="SV_smallHeader_L">
+		<div class="text" id="NLUskill">
+			none
+		</div>
+		Skill
+	</div>
+	<div class="SV_smallHeader_R">
+		<div class="text" id="NLUconf">
+			~~%
+		</div>
+		Confidence
+	</div>
+</div>
+<script>
+	function require(pathToScript){
+		let scripts = Array
+			.from(document.querySelectorAll('script'))
+			.map(scr => scr.src);
+
+		if (!scripts.includes(pathToScript)) {
+		    var tag = document.createElement('script');
+			tag.src = pathToScript;
+			document.getElementsByTagName('body')[0].appendChild(tag);
+			console.log(pathToScript);
+		}
+	}
+	require('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js');
+	require('/widget_static/SpeechVisualizer/js/Common.js');
+	if(!MQTT_RECEIVERS){
+		var MQTT_RECEIVERS = [];
+	}
+	MQTT_RECEIVERS.push(onMessage_SVINPUT);
+</script>
