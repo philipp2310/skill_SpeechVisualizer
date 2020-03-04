@@ -16,7 +16,7 @@ class Both(Widget):
 
 	def getMQTT(self):
 		host = self.ConfigManager.getAliceConfigByName('mqttHost')
-		port = int(self.ConfigManager.getConfig('MQTTWebsocketPort'))
+		port = int(self.ConfigManager.getSkillConfigByName('SpeechVisualizer', 'MQTTWebsocketPort'))
 		if port == 0:
 			port = 1 + int(self.ConfigManager.getAliceConfigByName('mqttPort'))
 			self.updateConfig('MQTTWebsocketPort', port)
