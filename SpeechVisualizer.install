@@ -5,6 +5,8 @@
     "maintainers": [],
     "desc": "Shows the voice in and output as a widget",
     "aliceMinVersion": "1.0.0-a5",
+    "icon": "fas fa-comments",
+    "category": "assistance",
     "systemRequirements": [
         ""
     ],
