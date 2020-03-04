@@ -35,7 +35,7 @@ function getMQTTConfig() {
 		if( MQTTHOST == 'localhost'){
 			MQTTHOST = window.location.hostname;
 		}
-		MQTTPORT = 1 + answer['PORT'];
+		MQTTPORT = 0 + answer['PORT'];
 		MQTTConnect(MQTTHOST, MQTTPORT);
 	})
 }

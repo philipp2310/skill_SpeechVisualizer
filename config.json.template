@@ -1,0 +1,7 @@
+{
+  "MQTTWebsocketPort": {
+		"defaultValue": "1884",
+		"dataType": "int",
+		"description": "Port of an external MQTT websocket. Internal will be 1884."
+	}
+}
