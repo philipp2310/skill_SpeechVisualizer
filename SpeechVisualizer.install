@@ -1,6 +1,6 @@
 {
     "name": "SpeechVisualizer",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "author": "philipp2310",
     "maintainers": ["psycho1888"],
     "desc": "Shows the voice in and output as a widget",

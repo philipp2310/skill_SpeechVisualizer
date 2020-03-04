@@ -12,7 +12,7 @@ wget http://skills.projectalice.ch/SpeechVisualizer -O ~/ProjectAlice/system/ski
 ### Description
 Shows the voice in and output as a widget
 
-- Version: 0.0.2
+- Version: 0.0.4
 - Author: philipp2310
 - Maintainers: psycho1888
 - Alice minimum Version: 1.0.0-a5
