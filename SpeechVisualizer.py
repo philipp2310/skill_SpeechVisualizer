@@ -8,7 +8,7 @@ class SpeechVisualizer(AliceSkill):
 		super().__init__()
 
 	def onSkillInstalled(self):
-		super.onSkillInstalled()
+		super().onSkillInstalled()
 		try:
 			f = open("/etc/mosquitto/conf.d/websockets.conf", "x")
 			# internal MQTT only with default ports supported for now
