@@ -17,7 +17,8 @@
         "lang": [
             "en",
             "fr",
-            "de"
+            "de",
+            "it"
         ],
         "asrArbitraryCapture": true,
         "activeManager": [

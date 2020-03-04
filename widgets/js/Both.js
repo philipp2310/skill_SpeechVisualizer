@@ -26,6 +26,5 @@ function onMessage_SVBOTH(msg) {
 		$('#SVI_ICON').attr('class', 'fas fa-microphone');
 	} else {
 		$('#ASRcontentBoth')[0].innerHTML = json['text'];
-		$('#ASRcontentOutput')[0].innerHTML = json['text'];
 	}
 }
