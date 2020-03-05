@@ -1,27 +1,29 @@
 {
-    "name": "SpeechVisualizer",
-    "version": "0.0.4",
-    "author": "philipp2310",
-    "maintainers": ["psycho1888"],
-    "desc": "Shows the voice in and output as a widget",
-    "aliceMinVersion": "1.0.0-a5",
-    "icon": "fas fa-comments",
-    "category": "assistance",
-    "systemRequirements": [
-        ""
-    ],
-    "pipRequirements": [
-        ""
-    ],
-    "conditions": {
-        "lang": [
-            "en",
-            "fr",
-            "de",
-            "it"
-        ],
-        "asrArbitraryCapture": true,
-        "activeManager": [
-        ]
-    }
+	"name": "SpeechVisualizer",
+	"version": "0.0.5",
+	"author": "philipp2310",
+	"maintainers": [
+		"Psychokiller1888"
+	],
+	"desc": "Shows the voice in and output as a widget",
+	"aliceMinVersion": "1.0.0-a5",
+	"icon": "fas fa-comments",
+	"category": "assistance",
+	"systemRequirements": [
+		""
+	],
+	"pipRequirements": [
+		""
+	],
+	"conditions": {
+		"lang": [
+			"en",
+			"fr",
+			"de",
+			"it"
+		],
+		"asrArbitraryCapture": true,
+		"activeManager": [
+		]
+	}
 }

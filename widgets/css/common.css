@@ -2,16 +2,16 @@
 	font-size: 0.6em;
 	color: darkgray;
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
+	bottom: 0;
+	left: 0;
 	margin: 5px;
 }
 .SV_smallHeader_R {
 	font-size: 0.6em;
 	color: darkgray;
 	position: absolute;
-	bottom: 0px;
-	right: 0px;
+	bottom: 0;
+	right: 0;
 	text-align: right;
 	margin: 5px;
 }
@@ -20,8 +20,8 @@
 	font-size: 0.6em;
 	color: darkgray;
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	top: 0;
+	right: 0;
 	text-align: right;
 	margin: 5px;
 }

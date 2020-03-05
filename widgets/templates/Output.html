@@ -9,22 +9,23 @@
 	</div>
 </div>
 <script>
-	function require(pathToScript){
+	function require(pathToScript) {
 		let scripts = Array
 			.from(document.querySelectorAll('script'))
 			.map(scr => scr.src);
 
 		if (!scripts.includes(pathToScript)) {
-		    var tag = document.createElement('script');
+			let tag = document.createElement('script');
 			tag.src = pathToScript;
 			document.getElementsByTagName('body')[0].appendChild(tag);
 			console.log(pathToScript);
 		}
 	}
+
 	require('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js');
 	require('/widget_static/SpeechVisualizer/js/Common.js');
-	if(!MQTT_RECEIVERS){
-		var MQTT_RECEIVERS = [];
+	if (!MQTT_RECEIVERS) {
+		let MQTT_RECEIVERS = [];
 	}
 	MQTT_RECEIVERS.push(onMessage_SVBOTH);
 </script>

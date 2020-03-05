@@ -1,5 +1,5 @@
-function onConnect(){
-	MQTT.subscribe("hermes/tts/say")
+function onConnect() {
+	MQTT.subscribe('hermes/tts/say');
 }
 
 function onMessage_SVBOTH(msg) {
