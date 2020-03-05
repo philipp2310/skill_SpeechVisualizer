@@ -9,3 +9,6 @@ function onMessage_SVBOTH(msg) {
 		$('#ASRcontentOutput')[0].innerHTML = json['text'];
 	}
 }
+
+mqttRegisterSelf(onConnect, 'onConnect');
+mqttRegisterSelf(onMessage_SVBOTH, 'onMessage');
