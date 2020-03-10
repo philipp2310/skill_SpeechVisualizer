@@ -12,20 +12,20 @@ $(function () {
 		//msg to json, get 'text'
 		let json = JSON.parse(msg.payloadString);
 		if (msg.destinationName == 'hermes/asr/partialTextCaptured') {
-			$('#ASRcontentBoth')[0].innerHTML = json['text'] + ' ...';
-			$('#ASRconf')[0].innerHTML = Number.parseFloat(json['likelihood']).toPrecision(2) * 100 + '%';
+			$('#SV_ASRcontentBoth')[0].innerHTML = json['text'] + ' ...';
+			$('#SV_ASRconf')[0].innerHTML = Number.parseFloat(json['likelihood']).toPrecision(2) * 100 + '%';
 		} else if (msg.destinationName == 'hermes/asr/textCaptured') {
-			$('#ASRcontentBoth')[0].innerHTML = json['text'];
-			$('#ASRconf')[0].innerHTML = Number.parseFloat(json['likelihood']).toPrecision(2) * 100 + '%';
+			$('#SV_ASRcontentBoth')[0].innerHTML = json['text'];
+			$('#SV_ASRconf')[0].innerHTML = Number.parseFloat(json['likelihood']).toPrecision(2) * 100 + '%';
 		} else if (msg.destinationName == 'hermes/nlu/intentParsed') {
-			$('#NLUskill')[0].innerHTML = json['intent']['intentName'];
-			$('#NLUconf')[0].innerHTML = Number.parseFloat(json['intent']['confidenceScore']).toPrecision(2) * 100 + '%';
+			$('#SV_NLUskill')[0].innerHTML = json['intent']['intentName'];
+			$('#SV_NLUconf')[0].innerHTML = Number.parseFloat(json['intent']['confidenceScore']).toPrecision(2) * 100 + '%';
 		} else if (msg.destinationName == 'hermes/asr/stopListening') {
 			$('#SVI_ICON').attr('class', 'fas fa-microphone-slash');
 		} else if (msg.destinationName == 'hermes/asr/startListening') {
 			$('#SVI_ICON').attr('class', 'fas fa-microphone');
 		} else {
-			$('#ASRcontentBoth')[0].innerHTML = json['text'];
+			$('#SV_ASRcontentBoth')[0].innerHTML = json['text'];
 		}
 	}
 

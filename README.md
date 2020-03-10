@@ -6,7 +6,7 @@
 ### Description
 Shows the voice in and output as a widget
 
-- Version: 1.0.0
+- Version: 1.0.1
 - Author: philipp2310
 - Maintainers: Psychokiller1888
 - Alice minimum Version: 1.0.0-a6

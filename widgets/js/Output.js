@@ -7,7 +7,7 @@ $(function () {
 		//msg to json, get 'text'
 		let json = JSON.parse(msg.payloadString);
 		if (msg.destinationName == 'hermes/tts/say') {
-			$('#ASRcontentOutput')[0].innerHTML = json['text'];
+			$('#SV_ASRcontentOutput')[0].innerHTML = json['text'];
 		}
 	}
 
